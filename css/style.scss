@@ -16,7 +16,7 @@ $tablet : 1024px;
 $mobileL : 768px;
 $mobileM : 580px;
 $mobileS : 480px;
-$mobileXS : 380px; 
+$mobileXS : 380px;
 
 $br : 4px;
 $tablePadding : 16px 0px;
@@ -169,11 +169,11 @@ nav {
     @media screen and (max-width: $mobileXS) {
       .nav__items {
         .mobile__menu__btn {
-          svg{
+          svg {
             width: 30px;
-          }  
+          }
         }
-        
+
         .nav__btns {
           button {
             padding: 6px 12px;
@@ -318,7 +318,7 @@ main {
 
         table {
           border-collapse: collapse;
-          width: 1072px;
+          width: 100%;
 
           tbody {
             tr {
@@ -352,9 +352,10 @@ main {
                   }
                 }
 
-                &:nth-child(1), &:nth-child(3) {
+                &:nth-child(1),
+                &:nth-child(3) {
                   display: flex;
-                  align-items:center;
+                  align-items: center;
                   gap: 16px;
                 }
 
@@ -365,12 +366,16 @@ main {
                   background-color: $primary;
                   border-radius: $br;
                   color: $greenBlack;
-                  cursor: pointer; 
+                  cursor: pointer;
                   text-align: center;
                   font-size: 12px;
                 }
               }
             }
+          }
+
+          @media screen and (max-width: $mobileL) {
+            width: 800px;
           }
         }
       }
@@ -388,7 +393,7 @@ main {
         }
       }
 
-      @media screen and (max-width: $mobileXS) {
+      @media screen and (max-width: 460px) {
         .markets__nav {
           flex-wrap: wrap;
           margin-bottom: 16px;
@@ -400,9 +405,7 @@ main {
             text-align: center;
           }
         }
-      }
 
-      @media screen and (max-width: 410px ) {
         .markets__view__all {
           flex-wrap: wrap;
 
@@ -412,7 +415,132 @@ main {
         }
       }
     }
+
+    .why__btc__markets {
+      margin-top: 64px;
+
+      h2 {
+        text-align: center;
+        font-size: min(48px, max(25px + 2vw));
+        font-weight: 400;
+        margin: 0;
+      }
+
+      .wbm__items {
+        display: flex;
+        justify-content: center;
+        gap: 64px;
+        margin-top: 128px;
+
+        .wbm__item {
+          text-align: center;
+          max-width: 250px;
+
+          .wbm__icon {
+            margin-bottom: 32px;
+          }
+
+          h4 {
+            margin: 0;
+            color: $firstBlack;
+            font-weight: 400;
+            font-size: 20px;
+          }
+
+          p {
+            color: $secondBlack;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+          }
+        }
+
+        @media screen and (max-width: $mobileL) {
+          flex-wrap: wrap;
+          margin-top: 64px;
+        }
+      }
+    }
   }
+
+  .trade__section {
+    h4 {
+      font-weight: 400;
+      color: $darkGray;
+      font-size: 16px;
+
+    }
+
+    .trade__section__blocks {
+      display: flex;
+      justify-content: space-between;
+      gap: 32px;
+
+      .trade__section__left {
+        flex: 1 1 550px;
+
+        h2 {
+          font-size: min(40px, max(20px + 2vw));
+          color: $firstBlack;
+          font-weight: 400;
+        }
+
+        .trade__items {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 64px;
+          gap: 32px;
+
+          .trade__item {
+            flex: 1 1 calc(100%/3);
+
+            h6 {
+              font-size: 16px;
+              color: $firstBlack;
+              font-weight: 400;
+              margin: 8px 0px 16px 0px;
+            }
+
+            p {
+              color: $secondBlack;
+              font-size: 15px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+
+      .trade__section__right {
+        flex: 1 1 550px;
+      }
+
+      @media screen and (max-width: $tablet) {
+        flex-wrap: wrap;
+
+        .trade__section__right {
+          .trade__section__right__img {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: $mobileM) {
+        .trade__section__left {
+          h2 {
+            text-align: center;
+          }
+
+          .trade__items {
+            .trade__item {
+              flex: 1 1 100%;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+  } 
 }
 
 
