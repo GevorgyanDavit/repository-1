@@ -467,7 +467,6 @@ main {
       font-weight: 400;
       color: $darkGray;
       font-size: 16px;
-
     }
 
     .trade__section__blocks {
@@ -524,6 +523,7 @@ main {
           }
         }
       }
+
       @media screen and (max-width: $mobileM) {
         .trade__section__left {
           h2 {
@@ -539,8 +539,181 @@ main {
         }
       }
     }
+  }
 
-  } 
+  .wallet__section {
+    margin-top: 32px;
+
+    h4 {
+      // transform: translateX(51.1%) senc scrola qcum vonc anem;
+      font-weight: 400;
+      color: $darkGray;
+      font-size: 16px;
+    }
+
+    .wallet__section__blocks {
+      display: flex;
+      justify-content: space-between;
+      gap: 32px;
+
+      .wallet__section__left {
+        flex: 1 1 550px;
+      }
+
+      .wallet__section__right {
+        flex: 1 1 550px;
+
+        h2 {
+          font-size: min(40px, max(20px + 2vw));
+          color: $firstBlack;
+          font-weight: 400;
+          margin: 0;
+        }
+
+        .wallet__items {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 64px;
+          gap: 32px;
+
+          .wallet__item {
+            flex: 1 1 calc(100%/3);
+
+            h6 {
+              font-size: 16px;
+              color: $firstBlack;
+              font-weight: 400;
+              margin: 8px 0px 16px 0px;
+            }
+
+            p {
+              color: $secondBlack;
+              font-size: 15px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: $tablet) {
+        flex-wrap: wrap-reverse;
+
+        .wallet__section__left {
+          .wallet__section__left__img {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    // @media screen and (max-width: $tablet) {
+    //   h4 {
+    //     transform: translateX(0%);
+    //   }
+    // }
+
+    @media screen and (max-width: $mobileM) {
+      .wallet__section__right {
+        h2 {
+          text-align: center;
+        }
+
+        .wallet__items {
+          .wallet__item {
+            flex: 1 1 233.6px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .vip__section {
+    background-color: #FAFAFA;
+    padding-top: 50px;
+
+    .vip__section__blocks {
+      margin-top: 32px;
+      text-align: center;
+
+      .vip__program {
+        margin: 0px 0px 48px 0px;
+
+        p {
+          font-size: 15px;
+          font-weight: 400;
+          color: $firstBlack;
+        }
+
+        h2 {
+          font-size: min(40px, max(20px + 2vw));
+          font-weight: 400;
+          letter-spacing: 0.1px;
+          margin: 0px 0px 32px 0px;
+          // max-width: 527px;
+        }
+      }
+
+      .vip__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 109px;
+        margin-bottom: 99px;
+
+        .vip__item {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          p {
+            font-size: 15px;
+            font-weight: 400;
+            color: $firstBlack;
+          }
+        }
+      }
+
+      .learnmore {
+        a {
+          display: inline-block;
+          color: $firstBlack;
+          font-size: 16px;
+          font-weight: 400;
+          text-decoration: none;
+          cursor: pointer;
+          border: 1px solid $firstBlack;
+          border-radius: $br;
+          padding: 9px 35px;
+          margin-bottom: 73px;
+        }
+      }
+
+      @media screen and (max-width: $mobileM) {
+        .vip__items {
+          flex-direction: column;
+          align-items: center;
+          gap: 50px;
+          margin-bottom: 50px;
+
+          .vip__item {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .vip__section__img {
+      .vip__img {
+        overflow-x: auto;
+        // img {
+        //   width: 100%;
+        // }
+      }
+    }
+  }
 }
 
 
