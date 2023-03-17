@@ -752,11 +752,11 @@ main .create__account .create__account__block .create__account__block__btn {
   margin: 0px 0px 160px 88px;
   padding: 10px 33px;
   background-color: #4CFDC7;
-  color: #01271C;
   border-radius: 4px;
 }
 main .create__account .create__account__block .create__account__block__btn a {
   text-decoration: none;
+  color: #01271C;
 }
 @media screen and (max-width: 1024px) {
   main .create__account .create__account__block {
@@ -792,7 +792,6 @@ footer .footer-up__section .footer-btc__block .footer-btc__block__content .line 
   margin: 0px 0px 38px 0px;
 }
 footer .footer-up__section .footer-btc__block .footer-btc__block__content .line p {
-  color: #3F3F46;
   font-size: min(12px, max(6px + 2vw));
   font-weight: 400;
   margin: 0;
@@ -800,6 +799,7 @@ footer .footer-up__section .footer-btc__block .footer-btc__block__content .line 
 }
 footer .footer-up__section .footer-btc__block .footer-btc__block__content .line p a {
   text-decoration: none;
+  color: #3F3F46;
 }
 @media screen and (max-width: 1024px) {
   footer .footer-up__section .footer-btc__block .footer-btc__block__logo {

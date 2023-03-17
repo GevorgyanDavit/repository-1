@@ -1005,11 +1005,12 @@ main {
         margin: 0px 0px 160px 88px;
         padding: 10px 33px;
         background-color: $primary;
-        color: $greenBlack;
+        // color: $greenBlack;
         border-radius: $br;
 
         a {
           text-decoration: none;
+          color: $greenBlack;
         }
       }
     }
@@ -1059,7 +1060,6 @@ footer {
           }
 
           p {
-            color: $footerBlack;
             font-size: min(12px, max(6px + 2vw));
             font-weight: 400;
             margin: 0;
@@ -1067,6 +1067,7 @@ footer {
 
             a {
               text-decoration: none;
+              color: $footerBlack;
             }
           }
         }
