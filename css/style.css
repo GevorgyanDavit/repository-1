@@ -519,6 +519,327 @@ main .vip__section .vip__section__blocks .learnmore a {
 main .vip__section .vip__section__img .vip__img {
   overflow-x: auto;
 }
+main .vip__section .vip__section__img .vip__img img {
+  display: block;
+}
+main .start__section .start__block {
+  background-color: #FFFFFF;
+  text-align: center;
+  padding-top: 122px;
+}
+main .start__section .start__block h2 {
+  color: #000000;
+  font-size: min(48px, max(24px + 2vw));
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 1px;
+  margin-bottom: 86px;
+  margin: 0px 0px 86px 0px;
+}
+main .start__section .start__block .start__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+main .start__section .start__block .start__items .start__items__item h6 {
+  color: #18181B;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 16px 0px;
+}
+main .start__section .start__block .start__items .start__items__item p {
+  color: #27272A;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  margin-bottom: 46px;
+}
+main .start__section .start__block a {
+  display: inline-block;
+  background-color: #4CFDC7;
+  color: #01271C;
+  letter-spacing: 0.1px;
+  lw: 400px;
+  text-decoration: none;
+  padding: 9px 33px;
+  border-radius: 4px;
+  margin-bottom: 35px;
+}
+main .start__section .start__block .start__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #27272A;
+  margin-bottom: 131px;
+}
+@media screen and (max-width: 947px) {
+  main .start__section .start__block .start__items {
+    gap: 50px;
+  }
+}
+main .tradeOn__section .tradeOn__block {
+  margin-top: 195px;
+}
+main .tradeOn__section .tradeOn__block h2 {
+  color: #000000;
+  font-size: min(46px, max(23px + 2vw));
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0px;
+  line-height: 48px;
+}
+main .tradeOn__section .tradeOn__block p {
+  font-size: min(16px, max(8px + 2vw));
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 24px 0px 30px 0px;
+}
+main .tradeOn__section .tradeOn__block .tradeOn__block__btns {
+  display: flex;
+  gap: 36px;
+  margin-bottom: 19px;
+}
+main .tradeOn__section .tradeOn__block .tradeOn__block__stars {
+  display: flex;
+  gap: 31px;
+}
+main .tradeOn__section .tradeOn__block .tradeOn__block__stars .app-store_star {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 34px;
+  color: #27272A;
+}
+main .tradeOn__section .tradeOn__block .tradeOn__block__stars .google-play_star {
+  display: flex;
+  gap: 5px;
+  color: #27272A;
+}
+main .tradeOn__section .tradeOn__block a {
+  color: #18181B;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+}
+@media screen and (max-width: 1024px) {
+  main .tradeOn__section .tradeOn__block {
+    text-align: center;
+    margin-top: 0;
+  }
+  main .tradeOn__section .tradeOn__block .tradeOn__block__btns,
+  main .tradeOn__section .tradeOn__block .tradeOn__block__stars {
+    justify-content: center;
+  }
+}
+main .main__line {
+  margin: 107px 0px 127px 0px;
+}
+@media screen and (max-width: 1024px) {
+  main .main__line {
+    margin: 50px 0px 65px 0px;
+  }
+}
+main .find__section .find__block h3 {
+  text-align: center;
+  color: firstBlack;
+  font-size: min(31px, max(15.5px + 2vw));
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+  margin-bottom: 64px;
+}
+main .find__section .find__block .find__block__btc-items {
+  display: flex;
+  gap: 32px;
+}
+main .find__section .find__block .find__block__btc-items .btc-items__item {
+  box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+main .find__section .find__block .find__block__btc-items .btc-items__item .item__img img {
+  width: 100%;
+}
+main .find__section .find__block .find__block__btc-items .btc-items__item .bg {
+  display: inline-block;
+  color: #18181B;
+  font-size: min(12px, max(6px + 2vw));
+  line-height: 12px;
+  font-weight: 400;
+  background-color: #4CFDC7;
+  margin: 20px 24px;
+  padding: 2px 8px;
+}
+main .find__section .find__block .find__block__btc-items .btc-items__item span {
+  display: inline-block;
+  color: #18181B;
+  font-size: min(12px, max(6px + 2vw));
+  line-height: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 20px 0px;
+}
+main .find__section .find__block .find__block__btc-items .btc-items__item h4 {
+  margin: 0px 40px 32px 24px;
+  color: #18181B;
+  font-size: min(24px, max(12px + 2vw));
+  font-weight: 400;
+  line-height: 30px;
+}
+main .find__section .find__block .find__block__btc-items .btc-items__item a {
+  display: block;
+  text-decoration: none;
+  color: #18181B;
+  font-size: min(16px, max(8px + 2vw));
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0px 0px 32px 24px;
+}
+main .find__section .find__block .find__block__btc-items .btc-items__item:nth-child(3) h4 {
+  margin-right: 14px;
+}
+main .find__section .find__block .find__block__btc-items .btc-items__item:nth-child(3) a {
+  margin-top: 62px;
+}
+main .find__section .find__block p {
+  text-align: center;
+  margin: 64px 0px;
+  color: #18181B;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+}
+main .find__section .find__block .find__block__items {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+}
+main .find__section .find__block .find__block__items .items__item {
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  main .find__section .find__block .find__block__btc-items {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .find__section .find__block .find__block__items {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+main .create__account .create__account__block {
+  margin-top: 200px;
+}
+main .create__account .create__account__block h3 {
+  padding: 0px 0px 37px 88px;
+  color: #000000;
+  font-size: min(46px, max(23px + 2vw));
+  line-height: 48px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+main .create__account .create__account__block .create__account__block__btn {
+  display: inline-block;
+  margin: 0px 0px 160px 88px;
+  padding: 10px 33px;
+  background-color: #4CFDC7;
+  color: #01271C;
+  border-radius: 4px;
+}
+main .create__account .create__account__block .create__account__block__btn a {
+  text-decoration: none;
+}
+@media screen and (max-width: 1024px) {
+  main .create__account .create__account__block {
+    text-align: center;
+    margin: 0;
+  }
+  main .create__account .create__account__block h3 {
+    margin: 20px 0px;
+    padding: 0;
+  }
+  main .create__account .create__account__block .create__account__block__btn {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+footer .footer-up__section .footer-btc__block .footer-btc__block__logo {
+  margin-bottom: 67px;
+}
+footer .footer-up__section .footer-btc__block .footer-btc__block__content {
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 137px;
+}
+footer .footer-up__section .footer-btc__block .footer-btc__block__content .line .headr {
+  color: #18181B;
+  font-size: min(12px, max(6px + 2vw));
+  line-height: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0px 0px 38px 0px;
+}
+footer .footer-up__section .footer-btc__block .footer-btc__block__content .line p {
+  color: #3F3F46;
+  font-size: min(12px, max(6px + 2vw));
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 16px;
+}
+footer .footer-up__section .footer-btc__block .footer-btc__block__content .line p a {
+  text-decoration: none;
+}
+@media screen and (max-width: 1024px) {
+  footer .footer-up__section .footer-btc__block .footer-btc__block__logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+footer .footer-down__section .footer-down__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -moz-column-gap: 34px;
+       column-gap: 34px;
+  margin-bottom: 67px;
+}
+footer .footer-down__section .footer-down__block .footer-down__block__up {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+footer .footer-down__section .footer-down__block .footer-down__block__up .first p {
+  color: #27272A;
+  font-size: min(12px, max(6px + 2vw));
+  line-height: 12px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+footer .footer-down__section .footer-down__block .footer-down__block__up .second span {
+  display: inline-block;
+  color: #27272A;
+  font-size: min(12px, max(6px + 2vw));
+  line-height: 12px;
+  font-weight: 400;
+}
+footer .footer-down__section .footer-down__block .footer-down__block__down p {
+  color: #27272A;
+  font-size: min(12px, max(6px + 2vw));
+  line-height: 12px;
+  font-weight: 400;
+}
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
