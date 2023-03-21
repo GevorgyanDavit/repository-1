@@ -5,6 +5,18 @@
 body {
   font-family: "regular", sans-serif;
 }
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+body::-webkit-scrollbar-thumb {
+  background: #888;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 .container {
   max-width: 1200px;
@@ -41,8 +53,26 @@ nav .nav .nav__items .nav__menu li {
   list-style-type: none;
 }
 nav .nav .nav__items .nav__menu li a {
+  position: relative;
   color: #18181B;
   text-decoration: none;
+  transition: 0.3s;
+}
+nav .nav .nav__items .nav__menu li a::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #4CFDC7;
+  position: absolute;
+  bottom: -10px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+nav .nav .nav__items .nav__menu li a:hover {
+  color: #4CFDC7;
+}
+nav .nav .nav__items .nav__menu li a:hover::before {
+  width: 100%;
 }
 nav .nav .nav__items .nav__btns {
   display: flex;
@@ -54,15 +84,26 @@ nav .nav .nav__items .nav__btns button {
   cursor: pointer;
   color: #18181B;
   font-size: 12px;
+  transition: 0.3s;
 }
 nav .nav .nav__items .nav__btns button#login {
   border: 1px solid #18181B;
   background-color: transparent;
 }
+nav .nav .nav__items .nav__btns button#login:hover {
+  background: #01271C;
+  border-color: #01271C;
+  color: #fff;
+}
 nav .nav .nav__items .nav__btns button#signup {
   border: 1px solid #4CFDC7;
   background-color: #4CFDC7;
   color: #01271C;
+}
+nav .nav .nav__items .nav__btns button#signup:hover {
+  background: #10B981;
+  border-color: #10B981;
+  color: #fff;
 }
 nav .nav .nav__items .nav__btns button svg {
   display: none;
@@ -149,15 +190,26 @@ header .header .header__left .header__left__btns a {
   padding: 9px 33px;
   border-radius: 4px;
   text-decoration: none;
+  transition: 0.3s;
 }
 header .header .header__left .header__left__btns a:nth-child(1) {
   background: #4CFDC7;
   color: #01271C;
 }
+header .header .header__left .header__left__btns a:nth-child(1):hover {
+  background: #10B981;
+  border-color: #10B981;
+  color: #fff;
+}
 header .header .header__left .header__left__btns a:nth-child(2) {
   background: transparent;
   color: #18181B;
   border: 1px solid #18181B;
+}
+header .header .header__left .header__left__btns a:nth-child(2):hover {
+  background: #01271C;
+  border-color: #01271C;
+  color: #fff;
 }
 header .header .header__left .header__left__stars {
   display: flex;
@@ -252,6 +304,7 @@ main .markets__section .markets .markets__table table tbody tr td:nth-child(1), 
 }
 main .markets__section .markets .markets__table table tbody tr td a {
   display: block;
+  width: 54px;
   text-decoration: none;
   padding: 16px 0px;
   background-color: #4CFDC7;
@@ -260,11 +313,30 @@ main .markets__section .markets .markets__table table tbody tr td a {
   cursor: pointer;
   text-align: center;
   font-size: 12px;
+  margin: 0px 0px 0px auto;
+  transition: 0.3s;
+}
+main .markets__section .markets .markets__table table tbody tr td a:hover {
+  background: #10B981;
+  border-color: #10B981;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   main .markets__section .markets .markets__table table {
     width: 800px;
   }
+}
+main .markets__section .markets .markets__table::-webkit-scrollbar {
+  height: 8px;
+}
+main .markets__section .markets .markets__table::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+main .markets__section .markets .markets__table::-webkit-scrollbar-thumb {
+  background: #888;
+}
+main .markets__section .markets .markets__table::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 main .markets__section .markets .markets__view__all {
   display: flex;
@@ -504,6 +576,12 @@ main .vip__section .vip__section__blocks .learnmore a {
   border-radius: 4px;
   padding: 9px 35px;
   margin-bottom: 73px;
+  transition: 0.3s;
+}
+main .vip__section .vip__section__blocks .learnmore a:hover {
+  background: #01271C;
+  border-color: #01271C;
+  color: #fff;
 }
 @media screen and (max-width: 580px) {
   main .vip__section .vip__section__blocks .vip__items {
@@ -566,6 +644,12 @@ main .start__section .start__block a {
   padding: 9px 33px;
   border-radius: 4px;
   margin-bottom: 35px;
+  transition: 0.3s;
+}
+main .start__section .start__block a:hover {
+  background: #10B981;
+  border-color: #10B981;
+  color: #fff;
 }
 main .start__section .start__block .start__icons {
   display: flex;
@@ -619,11 +703,21 @@ main .tradeOn__section .tradeOn__block .tradeOn__block__stars .google-play_star 
   color: #27272A;
 }
 main .tradeOn__section .tradeOn__block a {
-  color: #18181B;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 20px;
+  display: block;
   text-decoration: none;
+  padding: 9px 33px;
+  color: #18181B;
+  border: 1px solid #18181B;
+  border-radius: 4px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 32px auto 0px auto;
+  transition: 0.3s;
+}
+main .tradeOn__section .tradeOn__block a:hover {
+  background: #01271C;
+  border-color: #01271C;
+  color: #fff;
 }
 @media screen and (max-width: 1024px) {
   main .tradeOn__section .tradeOn__block {
@@ -660,9 +754,15 @@ main .find__section .find__block .find__block__btc-items .btc-items__item {
   box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
   border-radius: 8px;
   background-color: #FFFFFF;
+  transition: all 0.3s;
+  overflow: hidden;
 }
 main .find__section .find__block .find__block__btc-items .btc-items__item .item__img img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s;
 }
 main .find__section .find__block .find__block__btc-items .btc-items__item .bg {
   display: inline-block;
@@ -705,6 +805,18 @@ main .find__section .find__block .find__block__btc-items .btc-items__item:nth-ch
 main .find__section .find__block .find__block__btc-items .btc-items__item:nth-child(3) a {
   margin-top: 62px;
 }
+main .find__section .find__block .find__block__btc-items .btc-items__item:hover {
+  box-shadow: 0px 0px 32px rgba(9, 24, 26, 0.3);
+}
+main .find__section .find__block .find__block__btc-items .btc-items__item:hover .item__img img {
+  transform: scale(1.1);
+}
+main .find__section .find__block .find__block__btc-items .btc-items__item:hover h4 {
+  color: #01271C;
+}
+main .find__section .find__block .find__block__btc-items .btc-items__item:hover a {
+  color: #10B981;
+}
 main .find__section .find__block p {
   text-align: center;
   margin: 64px 0px;
@@ -712,6 +824,10 @@ main .find__section .find__block p {
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
+  cursor: pointer;
+}
+main .find__section .find__block p:hover {
+  text-decoration: underline;
 }
 main .find__section .find__block .find__block__items {
   display: flex;
@@ -721,6 +837,17 @@ main .find__section .find__block .find__block__items {
 main .find__section .find__block .find__block__items .items__item {
   display: flex;
   gap: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .find__section .find__block .find__block__items .items__item svg path {
+  transition: 0.3s;
+}
+main .find__section .find__block .find__block__items .items__item:hover {
+  color: #10B981;
+}
+main .find__section .find__block .find__block__items .items__item:hover svg path {
+  fill: #10B981;
 }
 @media screen and (max-width: 1024px) {
   main .find__section .find__block .find__block__btc-items {
@@ -753,10 +880,19 @@ main .create__account .create__account__block .create__account__block__btn {
   padding: 10px 33px;
   background-color: #4CFDC7;
   border-radius: 4px;
+  transition: 0.3s;
 }
 main .create__account .create__account__block .create__account__block__btn a {
   text-decoration: none;
   color: #01271C;
+  transition: 0.3s;
+}
+main .create__account .create__account__block .create__account__block__btn:hover {
+  background: #10B981;
+  border-color: #10B981;
+}
+main .create__account .create__account__block .create__account__block__btn:hover a {
+  color: #fff;
 }
 @media screen and (max-width: 1024px) {
   main .create__account .create__account__block {
@@ -800,6 +936,13 @@ footer .footer-up__section .footer-btc__block .footer-btc__block__content .line 
 footer .footer-up__section .footer-btc__block .footer-btc__block__content .line p a {
   text-decoration: none;
   color: #3F3F46;
+}
+footer .footer-up__section .footer-btc__block .footer-btc__block__content .line p a:hover {
+  text-decoration: underline;
+}
+footer .footer-up__section .footer-btc__block .footer-btc__block__content .line:nth-child(4) p a {
+  display: flex;
+  gap: 8px;
 }
 @media screen and (max-width: 1024px) {
   footer .footer-up__section .footer-btc__block .footer-btc__block__logo {
